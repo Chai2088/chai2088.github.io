@@ -1,7 +1,7 @@
 ---
 layout: page
 icon: fas fa-code
-order: 2
+order: 1
 ---
 
 During my four years in college I have worked in several projects, including personal and school projects. Here I have posted some of coolest projects I have worked on.
