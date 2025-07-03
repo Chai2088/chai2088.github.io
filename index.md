@@ -3,12 +3,12 @@ layout: custom_home
 ---
 
 ## About Me
-Hi! I’m Jiayi — but you can call me Chai.\
-I’m a Computer Science graduate from DigiPen Institute of Technology, where I specialized in Real-Time Interactive Simulation. Over the past four years, I’ve collaborated on multiple team-based game projects created from custom game engines builded from scratch by ourselves.
+Hi! I’m Jiayi — but you can call me __Chai__.\
+I’m a Computer Science graduate from __DigiPen Institute of Technology__, where I specialized in __Real-Time Interactive Simulation__. Over the past four years, I’ve collaborated on multiple team-based game projects created from custom game engines builded from scratch by ourselves.
 
 Along the way, I’ve also created several solo projects for class assignments — some of which I’m particularly proud of and have shared on my website.
 
-I’m most passionate about working on the engine side of development, especially building tools and graphics pipelines. That said, I’m always open to diving into gameplay programming and exploring other areas of game development and sofware development.
+I’m most passionate about working on the engine side of development, especially building __tools and graphic engines__. That said, I’m always open to diving into gameplay programming and exploring other areas of game development and sofware development.
 
 ## Programing Languages
 
@@ -38,7 +38,7 @@ I’m most passionate about working on the engine side of development, especiall
 > Unity was the first game engine I learned. Since then, I’ve developed several games using it, including a platformer created in just 48 hours during a 2024 Game Jam with a teammate.
 
 ### Maya
-> At university, I was introduced to 3D modeling using Maya. It gave me a solid foundation in modeling techniques. I also have prior experience with Blender, a similar tool, which helped me expand my modeling skillset.
+> At university, I was introduced to 3D modeling using Maya. It gave me a solid foundation in modeling techniques. I also have prior experience with __Blender__, a similar tool, which helped me expand my modeling skillset.
 
 ## CV
 ![CV](/assets/img/JiayiLin_CV_GraphicsProgrammer.png)
