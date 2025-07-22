@@ -1,5 +1,5 @@
 ---
-layout: custom_home
+layout: About Me
 ---
 
 ## About Me
