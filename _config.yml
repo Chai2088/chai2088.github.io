@@ -136,8 +136,6 @@ assets:
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
     env: # [development | production]
-  css:
-    - /assets/css/_custom.scss  #card hover
 
 pwa:
   enabled: true # The option for PWA feature (installable)
