@@ -1,33 +1,6 @@
 ---
 layout: About Me
 ---
-<!-- Add this in your head tag -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!-- Add this before closing body tag -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Check if AOS is loaded
-
-try{
-    if (typeof AOS !== 'undefined') {
-        AOS.init({
-        duration: 800,
-        easing: 'ease-out-quad',
-        once: true,
-        offset: 120
-        });
-        console.log('AOS initialized successfully');
-    } else {
-      console.error('AOS is not defined');
-    }
-} 
-catch (e) {
-    console.error('AOS initialization failed', e);
-}
-});
-</script>
 
 <div class="about-page">
 

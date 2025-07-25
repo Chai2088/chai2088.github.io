@@ -1,9 +1,27 @@
 ---
 layout: page
 ---
-<!DOCTYPE html>
 <html>
-  <body>
-     {{ content }}
-  </body>
+<head>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  {{ content }}
+
+  <!-- AOS JS at end of body -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 800,
+        once: true,
+        disable: window.innerWidth < 768 // disable on mobile if needed
+      });
+    });
+    
+    // Refresh AOS on page load (helps with some GitHub Pages issues)
+    window.addEventListener('load', AOS.refresh);
+  </script>
+</body>
 </html>
