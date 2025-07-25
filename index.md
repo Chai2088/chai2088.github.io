@@ -6,7 +6,7 @@ layout: About Me
 
  <section class="about-card profile-intro">
   <!-- Profile Header with Animation -->
-  <div class="profile-header" data-aos="fade-down" data-aos-duration="800">
+  <div class="profile-header" >
     <img src="/assets/img/favicons/android-chrome-192x192.png" alt="Jiayi (Chai)" class="profile-avatar">
     <div>
       <h1>Hi! I'm Jiayi <span class="nickname">"Chai"</span></h1>
@@ -16,13 +16,13 @@ layout: About Me
 
   <div class="profile-content">
     <!-- Intro Paragraph with Typing Animation -->
-    <div class="intro-paragraph" data-aos="fade-up" data-aos-delay="200">
+    <div class="intro-paragraph" >
       <p>I'm a <strong>Computer Science graduate</strong> from <strong>DigiPen Institute of Technology</strong>, where I specialized in <strong class="highlight">Real-Time Interactive Simulation</strong>. Over four intensive years, I collaborated on multiple team projects developing <strong>custom game engines from scratch</strong>, gaining deep understanding of engine architecture and performance optimization.</p>
     </div>
     
     <!-- Project Showcase with Card Animations -->
     <div class="project-showcase">
-      <div class="project-type" data-aos="flip-left" data-aos-delay="300">
+      <div class="project-type" >
         <i class="fas fa-users"></i>
         <h3>Projects</h3>
         <p>Built complete game engines with classmates, tackling challenges like rendering pipelines, physics systems, and memory management. <a href="/portfolio"> Check them here</a></p>
@@ -30,7 +30,7 @@ layout: About Me
     </div>
 
     <!-- Passion Statement with Grow Animation -->
-    <div class="passion-statement" data-aos="zoom-in" data-aos-delay="500">
+    <div class="passion-statement" >
       <div class="passion-icon">
         <i class="fas fa-cogs"></i>
       </div>
@@ -42,12 +42,12 @@ layout: About Me
   </div>
  </section>
  <!-- Programming Languages Section with Animations -->
-<section class="skills-section" data-aos="fade-up">
-  <h2 class="section-title" data-aos="fade-right" data-aos-delay="100"><i class="fas fa-code"></i> Programming Languages</h2>
+<section class="skills-section" >
+  <h2 class="section-title"><i class="fas fa-code"></i> Programming Languages</h2>
   
   <div class="skills-grid">
     <!-- C++ -->
-    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+    <div class="skill-card" >
       <div class="skill-header">
         <div class="skill-icon">
           <i class="fab fa-cuttlefish"></i><sup>++</sup>
@@ -61,7 +61,7 @@ layout: About Me
     </div>
     
     <!-- C -->
-    <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+    <div class="skill-card" >
       <div class="skill-header">
         <div class="skill-icon">
           <i class="fas fa-c"></i>
@@ -75,7 +75,7 @@ layout: About Me
     </div>
     
     <!-- C# -->
-    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+    <div class="skill-card" >
       <div class="skill-header">
         <div class="skill-icon">
           <i class="fab fa-hashtag"></i><sup>#</sup>
@@ -89,7 +89,7 @@ layout: About Me
     </div>
     
     <!-- Python -->
-    <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+    <div class="skill-card" >
       <div class="skill-header">
         <div class="skill-icon">
           <i class="fab fa-python"></i>
@@ -103,7 +103,7 @@ layout: About Me
     </div>
     
     <!-- GLSL -->
-    <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+    <div class="skill-card" >
       <div class="skill-header">
         <div class="skill-icon">
           <i class="fas fa-shapes"></i>
@@ -119,12 +119,12 @@ layout: About Me
 </section>
 
 <!-- Tools Section with Animation -->
-<section class="skills-section" data-aos="fade-up" data-aos-delay="100">
-  <h2 class="section-title" data-aos="fade-right" data-aos-delay="150"><i class="fas fa-tools"></i> Development Tools</h2>
+<section class="skills-section" >
+  <h2 class="section-title" ><i class="fas fa-tools"></i> Development Tools</h2>
   
   <div class="skills-grid">
     <!-- Visual Studio -->
-    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+    <div class="skill-card" >
       <div class="skill-icon">
         <i class="fas fa-code"></i>
       </div>
@@ -135,7 +135,7 @@ layout: About Me
     </div>
     
     <!-- RenderDoc -->
-    <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+    <div class="skill-card" >
       <div class="skill-icon">
         <i class="fas fa-bug"></i>
       </div>
@@ -146,7 +146,7 @@ layout: About Me
     </div>
     
     <!-- CMake -->
-    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+    <div class="skill-card" >
       <div class="skill-icon">
         <i class="fas fa-cubes"></i>
       </div>
@@ -159,12 +159,12 @@ layout: About Me
 </section>
 
 <!-- Programs Section with Animation -->
-<section class="skills-section" data-aos="fade-up" data-aos-delay="100">
-  <h2 class="section-title" data-aos="fade-right" data-aos-delay="150"><i class="fas fa-laptop-code"></i> Programs & Engines</h2>
+<section class="skills-section" >
+  <h2 class="section-title" ><i class="fas fa-laptop-code"></i> Programs & Engines</h2>
   
   <div class="skills-grid">
     <!-- Unreal Engine -->
-    <div class="skill-card" data-aos="flip-up" data-aos-delay="200">
+    <div class="skill-card">
       <div class="skill-icon">
         <i class="fas fa-gamepad"></i>
       </div>
@@ -175,7 +175,7 @@ layout: About Me
     </div>
     
     <!-- Unity -->
-    <div class="skill-card" data-aos="flip-up" data-aos-delay="250">
+    <div class="skill-card" >
       <div class="skill-icon">
         <i class="fab fa-unity"></i>
       </div>
@@ -186,7 +186,7 @@ layout: About Me
     </div>
     
     <!-- Maya -->
-    <div class="skill-card" data-aos="flip-up" data-aos-delay="300">
+    <div class="skill-card" >
       <div class="skill-icon">
         <i class="fas fa-cube"></i>
       </div>
@@ -197,7 +197,7 @@ layout: About Me
     </div>
     
     <!-- ImGui -->
-    <div class="skill-card" data-aos="flip-up" data-aos-delay="350">
+    <div class="skill-card" >
       <div class="skill-icon">
         <i class="fas fa-window-maximize"></i>
       </div>
@@ -210,36 +210,36 @@ layout: About Me
 </section>
 
 <!-- Education Section with Animations -->
-<section class="education-section" data-aos="fade-up">
-  <h2 class="section-title" data-aos="fade-right" data-aos-delay="100"><i class="fas fa-graduation-cap"></i> Education</h2>
+<section class="education-section" >
+  <h2 class="section-title" ><i class="fas fa-graduation-cap"></i> Education</h2>
   
   <div class="education-timeline">
     <!-- DigiPen -->
-    <div class="education-item" data-aos="fade-left" data-aos-delay="200">
+    <div class="education-item">
       <div class="education-major">
         <h3>Bachelor of Science in Computer Science</h3>
         <p class="education-specialization">Real-Time Interactive Simulation</p>
       </div>
       
       <div class="education-meta">
-        <div class="meta-line" data-aos="fade" data-aos-delay="300">
+        <div class="meta-line" >
           <span class="education-place">
             <i class="fas fa-map-marker-alt"></i> DigiPen Institute of Technology Europe-Bilbao
           </span>
         </div>
-        <div class="meta-line" data-aos="fade" data-aos-delay="350">
+        <div class="meta-line" >
           <span class="education-date">
             <i class="far fa-calendar-alt"></i> 2021 - 2025
           </span>
         </div>
       </div>
       
-      <div class="education-highlights" data-aos="fade-up" data-aos-delay="400">
+      <div class="education-highlights" >
         <h4>Key Achievements:</h4>
         <ul>
-          <li data-aos="fade-up" data-aos-delay="450">Developed multiple game engines from scratch in C++</li>
-          <li data-aos="fade-up" data-aos-delay="500">Specialized in graphics programming and low-level systems</li>
-          <li data-aos="fade-up" data-aos-delay="550">Completed team-based game projects throughout curriculum</li>
+          <li >Developed multiple game engines from scratch in C++</li>
+          <li >Specialized in graphics programming and low-level systems</li>
+          <li >Completed team-based game projects throughout curriculum</li>
         </ul>
       </div>
     </div>
@@ -247,18 +247,18 @@ layout: About Me
 </section>
 
 <!--CV section -->
-<section class="cv-section" data-aos="fade-up">
-  <h2 data-aos="fade-right"><i class="fas fa-file-alt"></i> Curriculum Vitae</h2>
+<section class="cv-section" >
+  <h2 ><i class="fas fa-file-alt"></i> Curriculum Vitae</h2>
   
   <div class="cv-options">
     <!-- Animated Download Button -->
-    <a href="/assets/img/JiayiLin_CV_GraphicsProgrammer.png" class="cv-button" download data-aos="zoom-in" data-aos-delay="100">
+    <a href="/assets/img/JiayiLin_CV_GraphicsProgrammer.png" class="cv-button" download >
       <i class="fas fa-file-png"></i> Download PNG
       <span class="download-arrow"><i class="fas fa-arrow-down"></i></span>
     </a>
     
     <!-- Preview with Pulse Animation -->
-    <div class="cv-preview" data-aos="flip-up" data-aos-delay="200">
+    <div class="cv-preview" >
       <img src="/assets/img/JiayiLin_CV_GraphicsProgrammer.png" alt="CV Preview" class="cv-image" id="cvPreview">
       <p class="preview-caption">Click to view fullscreen</p>
       <div class="pulse-effect"></div>
@@ -309,9 +309,6 @@ layout: About Me
 }
 
 /* Animation Styles */
-[data-aos] {
-  transition-property: transform, opacity;
-}
 
 /* Profile Animation */
 .profile-header {
