@@ -1,6 +1,8 @@
 ---
 layout: About Me
 ---
+<!-- Add this in your head tag -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <div class="about-page">
 
@@ -278,8 +280,6 @@ layout: About Me
 
 </div>
 
-<!-- Add this in your head tag -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <!-- Add this before closing body tag -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
