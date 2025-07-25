@@ -9,7 +9,7 @@ layout: About Me
   <div class="profile-header" data-aos="fade-down" data-aos-duration="800">
     <img src="/assets/img/favicons/android-chrome-192x192.png" alt="Jiayi (Chai)" class="profile-avatar">
     <div>
-      <h1>Hi! I'm Jiayi <span class="nickname">"Chai"</span></h1>
+      <h1>Hi! I'm Jiayi <span class="nickname">(Chai)</span></h1>
       <p class="tagline">Game Engine & Graphics Programmer</p>
     </div>
   </div>

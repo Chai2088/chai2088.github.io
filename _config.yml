@@ -149,6 +149,9 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
+github-pages:
+  jekyll-html-proofer:
+    enabled: false
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
