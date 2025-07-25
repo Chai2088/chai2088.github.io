@@ -2,13 +2,21 @@
 title: "AI Chess"
 category: [AI, Unity]
 layout: page
-image: /assets/img/Bloom.png
+image: /assets/img/AI_Chess.png
+order: 6
 ---
-This class project was developed by a team of three with the goal of researching and comparing different algorithms that can play chess. As part of our exploration, we built a demo where users can play against various AI opponents we developed.
+
+
+This class project was developed by a team of three using __Unity__ with the goal of researching and comparing different algorithms that can play chess. As part of our exploration, we built a demo where users can play against various AI opponents we developed.
 
 Our focus was on finding a balance between the speed of decision-making and the quality of the moves chosen by the AI. We implemented several algorithms and compared them based on both their performance (number of wins) and their computational efficiency (decision time). This hands-on approach allowed us to better understand the trade-offs between fast decision-making and strategic depth in AI gameplay.
 
-### Minimax Algorithm
+## Demo
+{% 
+    include embed/youtube.html id='rpwxKHAHHrE' 
+%}
+
+## Minimax Algorithm
 > It evaluates possible moves by exploring a game tree, where players alternate turns as either the maximizing or minimizing player. The algorithm simulates all possible moves until it reaches terminal nodes (end states), then works its way back up the tree to choose the optimal move.
 
 ```c#
@@ -94,7 +102,7 @@ else
     return minEval;
 }
 ```
-### Alpha-Beta Pruning
+## Alpha-Beta Pruning
 > This is a optimization based of the minimax algorithm. It speeds up the decision-making process by eliminating branches in the game tree that don’t need to be explored because they cannot influence the final decision. 
 > * Alpha refers to the best score the maximizing player can get.
 > * Beta refers to the best score the minimizing player can get.

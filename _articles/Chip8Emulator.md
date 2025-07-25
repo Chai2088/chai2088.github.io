@@ -2,7 +2,8 @@
 title: "CHIP-8 Emulator"
 category: [Emulation, Low-Level Programming]
 layout: page
-image: /assets/img/Bloom.png
+image: /assets/img/Chip8_Emulator.png
+order: 5
 ---
 For our final project in an optimization class, I developed a CHIP-8 emulator. This project gave me hands-on experience with low-level systems and taught me how to emulate a simple virtual machine from scratch.
 

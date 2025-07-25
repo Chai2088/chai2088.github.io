@@ -1,8 +1,9 @@
 ---
-title: "Vulkan Renderer"
+title: "Real Time Raytracer"
 category: [Vulkan, Graphics Engine, Ray Tracing]
 layout: page
 image: /assets/img/rtrt.png
+order: 3
 ---
 A real-time ray tracer developed using Vulkan, leveraging its GPU ray tracing extensions. Built from scratch as part of a class project, this application delivers impressive visual results—especially given its real-time performance.
 

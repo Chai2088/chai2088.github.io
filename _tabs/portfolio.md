@@ -7,7 +7,8 @@ permalink: /portfolio/
 During my four years in college I have worked in several projects, including personal and school projects. Here I have posted some of coolest projects I have worked on.
 
 <div class="card-list">
-  {% for post in site.articles %}
+{% assign sorted_posts = site.articles | sort: "order" %}
+  {% for post in sorted_posts %}
     <div class="card post-preview mb-4 bg-transparent position-relative border-light">
       <!-- Clickable overlay -->
       <a href="{{ post.url | relative_url }}" class="stretched-link z-1"></a>
@@ -45,10 +46,4 @@ During my four years in college I have worked in several projects, including per
     </div>
   {% endfor %}
 </div>
-## Other Projects
 
-### Bounding Volume Hierarchy
-> This is a space partioning technique used for improving the speed in queries. This can be used in many ways, such as performing collision queries, ray queries and checking which object to render which ones not. 
-
-### Octrees
->Octrees are another space partioning technique commonly used for raytracing and also collisions.

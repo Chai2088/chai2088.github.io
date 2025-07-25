@@ -2,18 +2,30 @@
 title: "Crash N Burn"
 category: [Game, Custom Engine]
 layout: page
-image: /assets/img/Bloom.png
+image: /assets/img/CrashNBurn.png
+order: 1
 ---
 
-__3D racing game featuring combat__ developed on a __custom engine__ based on OpenGL. This was a team project composed of 8 programmers. During this project I worked as the graphics programmer where I implemented a full featured 3D graphics pipeline. Among some rendering techniques I implemented in this project include: Cascaded Shadow Maps, Intance Rendering for Particles, PBR bloom.[Try it here](https://www.digipen.es/es/galeria/juegos-de-estudiantes/crashnburn)
+__3D racing game featuring combat__ developed on a __custom engine__ based on OpenGL. This was a team project composed of 8 programmers. During this project I worked as the graphics programmer where I implemented a full featured 3D graphics pipeline. Among some rendering techniques I implemented in this project include: Cascaded Shadow Maps, Intance Rendering for Particles, PBR bloom. [Try it here](https://www.digipen.es/es/galeria/juegos-de-estudiantes/crashnburn)
 {% 
     include embed/youtube.html id='zNP3G0KptD4'
 %}
 
-### Cascaded Shadow Maps
-While developing this game we came upon this challenge I had to work on which was the shadow quality, our game is a racing game meaning the map is huge, so we would also need to have an equally big shadow map, but having a single huge shadow map wasnt the best solution for our problems, as it require a huge chunk of memory, and additionatilly not all the places required a good shadow quality. 
+## Cascaded Shadow Maps
 
-Thus I chose this approach called cascaded shadow maps, which is a shadow rendering technique where the shadow map is split into multiple sections. Each section will render shadows at different distances from the camera. This ensures shadows closer to the camera have good quality and shadows far from the camera have less quality.
+__Challenge:__
+
+* Traditional shadow maps would require a big amount of memory
+
+* Resolution limitations might reduce the shadow quality
+
+__Solution:__
+
+* Implemented Cascaded Shadow Maps with 3 partitions
+
+* Reduces the memory use from the GPU
+
+* Ensures shadows closer to the camera have very good quality
 
 {% 
     include embed/youtube.html id='JlPHo7LQlpQ'
@@ -52,7 +64,7 @@ __Impact:__
 
 * Very fast rendering time and allows very big quantities of particles
 
-### Bloom
+## Bloom
 Bloom creates a glowing light effect around bright areas, making visuals feel more lifelike and cinematic. I included this feature in our game engine because it gives a more realistic feel to the light, also it blends very well to the aesthetic of the game.
 
 ![Bloom](/assets/img/Bloom.png)

@@ -3,7 +3,7 @@ title: "Virtual Mayhem"
 category: [Game, Custom Engine]
 layout: page
 image: /assets/img/VirtualMayhemPoster.png
-description: 9 artist and 4 programmers
+order: 2
 ---
 
 __2D combat game set in a futuristic world__ similar to Street Fighter and Mortal Combat. This game was also built from scratch in collaboration with a 13 people (9 artists and 4 programmers) using a __custom engine__ developed by ourselves. [Try it here](https://www.digipen.es/es/galeria/juegos-de-estudiantes/virtual-mayhem)
