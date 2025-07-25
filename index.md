@@ -283,19 +283,26 @@ layout: About Me
 
 <!-- Add this before closing body tag -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
-// Initialize AOS with custom settings
 document.addEventListener('DOMContentLoaded', function() {
-  AOS.init({
-    duration: 600,
-    easing: 'ease-out-quad',
-    once: true,
-    offset: 120,
-    delay: 100
-  });
+  // Check if AOS is loaded
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-quad',
+      once: true,
+      offset: 120
+    });
+  } else {
+    console.warn('AOS not loaded - animations disabled');
+    // Fallback: Add visible class to all animated elements
+    document.querySelectorAll('[data-aos]').forEach(el => {
+      el.style.opacity = 1;
+    });
+  }
 });
 </script>
-
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
