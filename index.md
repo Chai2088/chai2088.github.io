@@ -247,19 +247,21 @@ layout: About Me
 </section>
 
 <!--CV section -->
-<section class="cv-section">
-  <h2><i class="fas fa-file-alt"></i> Curriculum Vitae</h2>
+<section class="cv-section" data-aos="fade-up">
+  <h2 data-aos="fade-right"><i class="fas fa-file-alt"></i> Curriculum Vitae</h2>
   
   <div class="cv-options">
-    <!-- PDF Download -->
-    <a href="/assets/img/JiayiLin_CV_GraphicsProgrammer.png" class="cv-button" download>
+    <!-- Animated Download Button -->
+    <a href="/assets/img/JiayiLin_CV_GraphicsProgrammer.png" class="cv-button" download data-aos="zoom-in" data-aos-delay="100">
       <i class="fas fa-file-png"></i> Download PNG
+      <span class="download-arrow"><i class="fas fa-arrow-down"></i></span>
     </a>
     
-    <!-- PNG Preview -->
-    <div class="cv-preview">
+    <!-- Preview with Pulse Animation -->
+    <div class="cv-preview" data-aos="flip-up" data-aos-delay="200">
       <img src="/assets/img/JiayiLin_CV_GraphicsProgrammer.png" alt="CV Preview" class="cv-image" id="cvPreview">
-      <p class="preview-caption">Click preview to enlarge</p>
+      <p class="preview-caption">Click to view fullscreen</p>
+      <div class="pulse-effect"></div>
     </div>
   </div>
 </section>
@@ -294,29 +296,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Get elements
+  // Initialize AOS animations
+  AOS.init({
+    duration: 800,
+    easing: 'ease-out-quad',
+    once: true
+  });
+
+  // CV Preview Modal
   const modal = document.getElementById("cvModal");
   const previewImg = document.getElementById("cvPreview");
   const modalImg = document.getElementById("modalCvImage");
-  const closeBtn = document.querySelector(".close-modal");
   
-  // Set modal image source when page loads
+  // Set modal image source
   modalImg.src = previewImg.src;
   
-  // Open modal when preview is clicked
+  // Open modal with animation
   previewImg.addEventListener('click', function() {
     modal.classList.add('show');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling
+    document.body.style.overflow = 'hidden';
   });
   
   // Close modal functions
   function closeModal() {
     modal.classList.remove('show');
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
+    document.body.style.overflow = 'auto';
   }
   
   // Close when X is clicked
-  closeBtn.addEventListener('click', closeModal);
+  document.querySelector('.close-modal').addEventListener('click', closeModal);
   
   // Close when clicking outside image
   modal.addEventListener('click', function(e) {
@@ -330,6 +338,15 @@ document.addEventListener('DOMContentLoaded', function() {
     if (e.key === 'Escape' && modal.classList.contains('show')) {
       closeModal();
     }
+  });
+  
+  // Add zoom effect on mousewheel
+  let scale = 1;
+  modalImg.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    scale += e.deltaY * -0.01;
+    scale = Math.min(Math.max(0.5, scale), 3);
+    modalImg.style.transform = `scale(${scale})`;
   });
 });
 </script>
@@ -678,13 +695,26 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 }
 
-/* CV Section Styling */
+/* CV Section Animation Styles */
 .cv-section {
   margin: 3rem 0;
   padding: 2rem;
   background: var(--card-bg);
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+  position: relative;
+}
+
+.cv-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(var(--link-color-rgb), 0.03) 0%, transparent 100%);
+  z-index: -1;
 }
 
 .cv-options {
@@ -695,6 +725,7 @@ document.addEventListener('DOMContentLoaded', function() {
   margin-top: 1.5rem;
 }
 
+/* Animated Download Button */
 .cv-button {
   display: inline-flex;
   align-items: center;
@@ -705,19 +736,38 @@ document.addEventListener('DOMContentLoaded', function() {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .cv-button:hover {
   background: var(--link-hover-color);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(var(--link-color-rgb), 0.3);
 }
 
+.cv-button:hover .download-arrow {
+  transform: translateY(5px);
+  opacity: 1;
+}
+
+.download-arrow {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Animated Preview */
 .cv-preview {
   flex: 1;
   min-width: 250px;
   text-align: center;
+  position: relative;
+  perspective: 1000px;
 }
 
 .cv-image {
@@ -726,20 +776,48 @@ document.addEventListener('DOMContentLoaded', function() {
   border: 1px solid var(--border-color);
   border-radius: 6px;
   cursor: zoom-in;
-  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .cv-image:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px) rotateX(5deg);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
 .preview-caption {
   margin-top: 0.8rem;
   color: var(--text-muted-color);
   font-size: 0.9rem;
+  animation: fadeInOut 2s infinite;
 }
 
-/* Modal Styling */
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.pulse-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: rgba(var(--link-color-rgb), 0.1);
+  animation: pulse 3s infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0; }
+  50% { transform: scale(1.01); opacity: 0.3; }
+  100% { transform: scale(0.95); opacity: 0; }
+}
+
+/* Enhanced Modal Animation */
 .modal {
   display: none;
   position: fixed;
@@ -748,8 +826,10 @@ document.addEventListener('DOMContentLoaded', function() {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.95);
   overflow: auto;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .modal.show {
@@ -757,6 +837,7 @@ document.addEventListener('DOMContentLoaded', function() {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 1;
 }
 
 .modal-content {
@@ -764,12 +845,15 @@ document.addEventListener('DOMContentLoaded', function() {
   max-height: 80vh;
   object-fit: contain;
   border-radius: 8px;
-  animation: zoomIn 0.3s ease;
+  transform: scale(0.9);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  cursor: grab;
 }
 
-@keyframes zoomIn {
-  from { transform: scale(0.95); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+.modal.show .modal-content {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .close-modal {
@@ -780,11 +864,19 @@ document.addEventListener('DOMContentLoaded', function() {
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: all 0.3s ease;
+  transform: scale(0.8);
+  opacity: 0.7;
+}
+
+.modal.show .close-modal {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .close-modal:hover {
-  color: #ccc;
+  color: var(--link-color);
+  transform: rotate(90deg) scale(1.1);
 }
 
 .modal-caption {
@@ -792,7 +884,14 @@ document.addEventListener('DOMContentLoaded', function() {
   text-align: center;
   margin: 15px 0;
   font-size: 0.9rem;
-  opacity: 0.8;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease 0.2s;
+}
+
+.modal.show .modal-caption {
+  opacity: 0.7;
+  transform: translateY(0);
 }
 
 /* Responsive Adjustments */
@@ -809,6 +908,11 @@ document.addEventListener('DOMContentLoaded', function() {
     top: 15px;
     right: 25px;
     font-size: 30px;
+  }
+  
+  .cv-button {
+    width: 100%;
+    justify-content: center;
   }
 }
 </style>
