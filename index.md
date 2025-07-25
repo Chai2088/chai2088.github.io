@@ -5,32 +5,49 @@ layout: About Me
 <div class="about-page">
 
  <section class="about-card profile-intro">
-  <div class="profile-header">
+  <!-- Profile Header with Animation -->
+  <div class="profile-header" data-aos="fade-down" data-aos-duration="800">
     <img src="/assets/img/favicons/android-chrome-192x192.png" alt="Jiayi (Chai)" class="profile-avatar">
     <div>
-      <h1>Hi! I'm Jiayi <span class="nickname">(Chai)</span></h1>
+      <h1>Hi! I'm Jiayi <span class="nickname">"Chai"</span></h1>
       <p class="tagline">Game Engine & Graphics Programmer</p>
     </div>
   </div>
 
   <div class="profile-content">
-    <div class="intro-paragraph">
+    <!-- Intro Paragraph with Typing Animation -->
+    <div class="intro-paragraph" data-aos="fade-up" data-aos-delay="200">
       <p>I'm a <strong>Computer Science graduate</strong> from <strong>DigiPen Institute of Technology</strong>, where I specialized in <strong class="highlight">Real-Time Interactive Simulation</strong>. Over four intensive years, I collaborated on multiple team projects developing <strong>custom game engines from scratch</strong>, gaining deep understanding of engine architecture and performance optimization.</p>
     </div>
-    <!-- CV Image Preview -->
-    <div class="cv-preview">
-      <h3><i class="fas fa-file-alt"></i> CV Preview</h3>
-      <img src="/assets/img/JiayiLin_CV_GraphicsProgrammer.png" alt="CV Preview" class="cv-image">
+    
+    <!-- Project Showcase with Card Animations -->
+    <div class="project-showcase">
+      <div class="project-type" data-aos="flip-left" data-aos-delay="300">
+        <i class="fas fa-users"></i>
+        <h3>Projects</h3>
+        <p>Built complete game engines with classmates, tackling challenges like rendering pipelines, physics systems, and memory management. <a href="/portfolio"> Check them here</a></p>
+      </div>
+    </div>
+
+    <!-- Passion Statement with Grow Animation -->
+    <div class="passion-statement" data-aos="zoom-in" data-aos-delay="500">
+      <div class="passion-icon">
+        <i class="fas fa-cogs"></i>
+      </div>
+      <div>
+        <h3>My Passion</h3>
+        <p>I thrive when <strong>building tools and graphics engines</strong>—nothing excites me more than optimizing rendering pipelines or creating developer tools. That said, I enjoy exploring all aspects of game development, from gameplay programming to shader development.</p>
+      </div>
     </div>
   </div>
  </section>
- <!-- Programming Languages Section -->
-<section class="skills-section">
-  <h2 class="section-title"><i class="fas fa-code"></i> Programming Languages</h2>
+ <!-- Programming Languages Section with Animations -->
+<section class="skills-section" data-aos="fade-up">
+  <h2 class="section-title" data-aos="fade-right" data-aos-delay="100"><i class="fas fa-code"></i> Programming Languages</h2>
   
   <div class="skills-grid">
     <!-- C++ -->
-    <div class="skill-card">
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
       <div class="skill-header">
         <div class="skill-icon">
           <i class="fab fa-cuttlefish"></i><sup>++</sup>
@@ -41,13 +58,10 @@ layout: About Me
       <div class="skill-bar-container">
         <div class="skill-bar" style="width: 90%"></div>
       </div>
-      <div class="skill-description">
-        <p>Primary language for game engine development and performance-critical systems.</p>
-      </div>
     </div>
     
     <!-- C -->
-    <div class="skill-card">
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
       <div class="skill-header">
         <div class="skill-icon">
           <i class="fas fa-c"></i>
@@ -58,16 +72,13 @@ layout: About Me
       <div class="skill-bar-container">
         <div class="skill-bar" style="width: 85%"></div>
       </div>
-      <div class="skill-description">
-        <p>Used for low-level systems programming and hardware interaction.</p>
-      </div>
     </div>
     
     <!-- C# -->
-    <div class="skill-card">
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
       <div class="skill-header">
         <div class="skill-icon">
-          <i class="fab fa-microsoft"></i><sup>#</sup>
+          <i class="fab fa-hashtag"></i><sup>#</sup>
         </div>
         <h3 class="skill-name">C#</h3>
         <span class="skill-level">Proficient</span>
@@ -75,13 +86,10 @@ layout: About Me
       <div class="skill-bar-container">
         <div class="skill-bar" style="width: 80%"></div>
       </div>
-      <div class="skill-description">
-        <p>Unity scripting and application development.</p>
-      </div>
     </div>
     
     <!-- Python -->
-    <div class="skill-card">
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
       <div class="skill-header">
         <div class="skill-icon">
           <i class="fab fa-python"></i>
@@ -92,13 +100,10 @@ layout: About Me
       <div class="skill-bar-container">
         <div class="skill-bar" style="width: 65%"></div>
       </div>
-      <div class="skill-description">
-        <p>Scripting, tools development, and automation tasks.</p>
-      </div>
     </div>
     
     <!-- GLSL -->
-    <div class="skill-card">
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
       <div class="skill-header">
         <div class="skill-icon">
           <i class="fas fa-shapes"></i>
@@ -109,31 +114,28 @@ layout: About Me
       <div class="skill-bar-container">
         <div class="skill-bar" style="width: 75%"></div>
       </div>
-      <div class="skill-description">
-        <p>Shader programming for real-time graphics rendering.</p>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- Tools Section -->
-<section class="skills-section">
-  <h2 class="section-title"><i class="fas fa-tools"></i> Development Tools</h2>
+<!-- Tools Section with Animation -->
+<section class="skills-section" data-aos="fade-up" data-aos-delay="100">
+  <h2 class="section-title" data-aos="fade-right" data-aos-delay="150"><i class="fas fa-tools"></i> Development Tools</h2>
   
   <div class="skills-grid">
     <!-- Visual Studio -->
-    <div class="skill-card">
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
       <div class="skill-icon">
         <i class="fas fa-code"></i>
       </div>
       <h3 class="skill-name">Visual Studio</h3>
       <div class="skill-description">
-        <p>My primary IDE for software development. Highly proficient with advanced features like the performance profiler for code optimization.</p>
+        <p>My primary IDE for software development. Highly proficient with advanced features like performance profiling.</p>
       </div>
     </div>
     
     <!-- RenderDoc -->
-    <div class="skill-card">
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
       <div class="skill-icon">
         <i class="fas fa-bug"></i>
       </div>
@@ -144,104 +146,194 @@ layout: About Me
     </div>
     
     <!-- CMake -->
-    <div class="skill-card">
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
       <div class="skill-icon">
         <i class="fas fa-cubes"></i>
       </div>
       <h3 class="skill-name">CMake</h3>
       <div class="skill-description">
-        <p>Enables creation of cross-platform projects, streamlining the build process across different environments.</p>
+        <p>Enables creation of cross-platform projects, streamlining the build process.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Programs Section -->
-<section class="skills-section">
-  <h2 class="section-title"><i class="fas fa-laptop-code"></i> Programs & Frameworks</h2>
+<!-- Programs Section with Animation -->
+<section class="skills-section" data-aos="fade-up" data-aos-delay="100">
+  <h2 class="section-title" data-aos="fade-right" data-aos-delay="150"><i class="fas fa-laptop-code"></i> Programs & Engines</h2>
   
   <div class="skills-grid">
     <!-- Unreal Engine -->
-    <div class="skill-card">
+    <div class="skill-card" data-aos="flip-up" data-aos-delay="200">
       <div class="skill-icon">
         <i class="fas fa-gamepad"></i>
       </div>
       <h3 class="skill-name">Unreal Engine</h3>
       <div class="skill-description">
-        <p>Developed full game projects using both C++ and Blueprints, combining them for optimal engine flexibility.</p>
+        <p>Developed full game projects using both C++ and Blueprints.</p>
       </div>
     </div>
     
     <!-- Unity -->
-    <div class="skill-card">
+    <div class="skill-card" data-aos="flip-up" data-aos-delay="250">
       <div class="skill-icon">
         <i class="fab fa-unity"></i>
       </div>
       <h3 class="skill-name">Unity</h3>
       <div class="skill-description">
-        <p>Created several games including a 48-hour platformer during a 2024 Game Jam with a teammate.</p>
+        <p>Created several games including a 48-hour platformer during a Game Jam.</p>
       </div>
     </div>
     
     <!-- Maya -->
-    <div class="skill-card">
+    <div class="skill-card" data-aos="flip-up" data-aos-delay="300">
       <div class="skill-icon">
         <i class="fas fa-cube"></i>
       </div>
       <h3 class="skill-name">Maya</h3>
       <div class="skill-description">
-        <p>Gained solid 3D modeling foundation at university, with complementary experience in Blender.</p>
+        <p>Gained solid 3D modeling foundation with complementary Blender experience.</p>
       </div>
     </div>
     
     <!-- ImGui -->
-    <div class="skill-card">
+    <div class="skill-card" data-aos="flip-up" data-aos-delay="350">
       <div class="skill-icon">
         <i class="fas fa-window-maximize"></i>
       </div>
       <h3 class="skill-name">ImGui</h3>
       <div class="skill-description">
-        <p>Developed custom tools and debug interfaces using this immediate-mode GUI library for game engines.</p>
+        <p>Built custom tools and debug interfaces for game engines.</p>
       </div>
     </div>
   </div>
 </section>
 
- <!-- Education Section -->
- <section class="about-card">
-  <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+<!-- Education Section with Animations -->
+<section class="education-section" data-aos="fade-up">
+  <h2 class="section-title" data-aos="fade-right" data-aos-delay="100"><i class="fas fa-graduation-cap"></i> Education</h2>
   
-  <div class="education-item">
-    <div class="education-major">
-      <h3>Bachelor of Science in Computer Science</h3>
-      <p class="education-specialization">Real-Time Interactive Simulation</p>
-    </div>
-    
-    <div class="education-meta">
-      <div class="meta-line">
-        <span class="education-place">
-          <i class="fas fa-map-marker-alt"></i> DigiPen Institute of Technology Europe-Bilbao
-        </span>
+  <div class="education-timeline">
+    <!-- DigiPen -->
+    <div class="education-item" data-aos="fade-left" data-aos-delay="200">
+      <div class="education-major">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p class="education-specialization">Real-Time Interactive Simulation</p>
       </div>
-      <div class="meta-line">
-        <span class="education-date">
-          <i class="far fa-calendar-alt"></i> 2021 - 2025
-        </span>
+      
+      <div class="education-meta">
+        <div class="meta-line" data-aos="fade" data-aos-delay="300">
+          <span class="education-place">
+            <i class="fas fa-map-marker-alt"></i> DigiPen Institute of Technology Europe-Bilbao
+          </span>
+        </div>
+        <div class="meta-line" data-aos="fade" data-aos-delay="350">
+          <span class="education-date">
+            <i class="far fa-calendar-alt"></i> 2021 - 2025
+          </span>
+        </div>
       </div>
-    </div>
-    
-    <div class="education-highlights">
-      <h4>Key Achievements:</h4>
-      <ul>
-        <li>Developed multiple game engines from scratch in C++</li>
-        <li>Specialized in graphics programming and low-level systems</li>
-        <li>Completed team-based game projects throughout curriculum</li>
-        <li>Senior year project: [Your Project Name]</li>
-      </ul>
+      
+      <div class="education-highlights" data-aos="fade-up" data-aos-delay="400">
+        <h4>Key Achievements:</h4>
+        <ul>
+          <li data-aos="fade-up" data-aos-delay="450">Developed multiple game engines from scratch in C++</li>
+          <li data-aos="fade-up" data-aos-delay="500">Specialized in graphics programming and low-level systems</li>
+          <li data-aos="fade-up" data-aos-delay="550">Completed team-based game projects throughout curriculum</li>
+        </ul>
+      </div>
     </div>
   </div>
- </section>
+</section>
+
+<!--CV section -->
+<section class="cv-section">
+  <h2><i class="fas fa-file-alt"></i> Curriculum Vitae</h2>
+  
+  <div class="cv-options">
+    <!-- PDF Download -->
+    <a href="/assets/img/JiayiLin_CV_GraphicsProgrammer.png" class="cv-button" download>
+      <i class="fas fa-file-png"></i> Download PNG
+    </a>
+    
+    <!-- PNG Preview -->
+    <div class="cv-preview">
+      <img src="/assets/img/JiayiLin_CV_GraphicsProgrammer.png" alt="CV Preview" class="cv-image" id="cvPreview">
+      <p class="preview-caption">Click preview to enlarge</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Overlay -->
+<div id="cvModal" class="modal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="modalCvImage">
+  <div class="modal-caption">Press ESC or click outside to close</div>
 </div>
+
+</div>
+
+<!-- Add this in your head tag -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Add this before closing body tag -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+// Initialize AOS with custom settings
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    duration: 600,
+    easing: 'ease-out-quad',
+    once: true,
+    offset: 120,
+    delay: 100
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get elements
+  const modal = document.getElementById("cvModal");
+  const previewImg = document.getElementById("cvPreview");
+  const modalImg = document.getElementById("modalCvImage");
+  const closeBtn = document.querySelector(".close-modal");
+  
+  // Set modal image source when page loads
+  modalImg.src = previewImg.src;
+  
+  // Open modal when preview is clicked
+  previewImg.addEventListener('click', function() {
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+  });
+  
+  // Close modal functions
+  function closeModal() {
+    modal.classList.remove('show');
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
+  }
+  
+  // Close when X is clicked
+  closeBtn.addEventListener('click', closeModal);
+  
+  // Close when clicking outside image
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+  
+  // Close with ESC key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+      closeModal();
+    }
+  });
+});
+</script>
+
 
 <style>
 /* Base Styles */
@@ -271,6 +363,32 @@ layout: About Me
 
 .about-card h2 i {
   color: var(--link-color);
+}
+
+/* Animation Styles */
+[data-aos] {
+  transition-property: transform, opacity;
+}
+
+/* Profile Animation */
+.profile-header {
+  transition: all 0.8s ease;
+}
+
+/* Project Card Animation */
+.project-type {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Passion Statement Animation */
+.passion-statement {
+  transition: all 0.6s ease-out;
+}
+
+/* Existing styles from previous implementation remain the same */
+.profile-intro {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Profile Section */
@@ -309,6 +427,11 @@ layout: About Me
   line-height: 1.7;
 }
 
+/* Animation Enhancements */
+.skill-card {
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-origin: center bottom;
+}
 /* Skills Section */
 /* Skills Section Styling */
 .skills-section {
@@ -554,38 +677,138 @@ layout: About Me
     font-size: 1rem;
   }
 }
+
+/* CV Section Styling */
+.cv-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.cv-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.9rem 1.8rem;
+  background: var(--link-color);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.cv-button:hover {
+  background: var(--link-hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cv-preview {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.cv-image {
+  max-width: 100%;
+  max-height: 300px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.cv-image:hover {
+  transform: scale(1.02);
+}
+
+.preview-caption {
+  margin-top: 0.8rem;
+  color: var(--text-muted-color);
+  font-size: 0.9rem;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  overflow: auto;
+}
+
+.modal.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.close-modal {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-modal:hover {
+  color: #ccc;
+}
+
+.modal-caption {
+  color: white;
+  text-align: center;
+  margin: 15px 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .cv-options {
+    flex-direction: column;
+  }
+  
+  .modal-content {
+    max-width: 95%;
+  }
+  
+  .close-modal {
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+  }
+}
 </style>
-
-
-<!-- ## Programing Languages
-
-* C++
-* C
-* C#
-* Python
-* GLSL
-
-## Tools
-
-### Visual Studio
-> Visual Studio is my primary IDE for software development. I'm highly proficient with it and frequently use advanced features such as the performance profiler to optimize my code.
-
-### RenderDoc
-> Debugging graphics issues can be complex, which is why I rely heavily on RenderDoc. It has become an essential tool for diagnosing and resolving rendering bugs during graphics development.
-
-### CMake
-> I use CMake regularly due to its flexibility and power. It allows me to create cross-platform projects with ease, streamlining the build process across different environments.
-
-## Programs
-
-### Unreal Engine
-> I worked extensively with Unreal Engine during my senior year, developing a full game project. I programmed in both C++ and Unreal Blueprints, often combining the two to take full advantage of the engine’s flexibility.
-
-### Unity
-> Unity was the first game engine I learned. Since then, I’ve developed several games using it, including a platformer created in just 48 hours during a 2024 Game Jam with a teammate.
-
-### Maya
-> At university, I was introduced to 3D modeling using Maya. It gave me a solid foundation in modeling techniques. I also have prior experience with __Blender__, a similar tool, which helped me expand my modeling skillset.
-
-## CV
-![CV](/assets/img/JiayiLin_CV_GraphicsProgrammer.png) -->
