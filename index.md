@@ -9,7 +9,7 @@ layout: About Me
   <div class="profile-header" data-aos="fade-down" data-aos-duration="800">
     <img src="/assets/img/favicons/android-chrome-192x192.png" alt="Jiayi (Chai)" class="profile-avatar">
     <div>
-      <h1>Hi! I'm Jiayi <span class="nickname">(Chai)</span></h1>
+      <h1>Hi! I'm Jiayi <span class="nickname">"Chai"</span></h1>
       <p class="tagline">Game Engine & Graphics Programmer</p>
     </div>
   </div>
@@ -268,8 +268,11 @@ layout: About Me
 
 <!-- Modal Overlay -->
 <div id="cvModal" class="modal">
-  <span class="close-modal">&times;</span>
-  <img class="modal-content" id="modalCvImage">
+    <span class="close-modal" aria-label="Close modal">&times;</span>
+    <img class="modal-content" 
+         id="modalCvImage"
+         src="/assets/img/JiayiLin_CV_GraphicsProgrammer.png"
+         alt="Full view of Jiayi Lin's Curriculum Vitae">
   <div class="modal-caption">Press ESC or click outside to close</div>
 </div>
 
