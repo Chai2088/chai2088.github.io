@@ -11,8 +11,14 @@ During my four years in college I have worked in several projects, including per
   {% for post in sorted_posts %}
     <div class="card post-preview mb-4 bg-transparent position-relative border-light">
       <!-- Clickable overlay -->
-      <a href="{{ post.url | relative_url }}" class="stretched-link z-1"></a>
-      
+      <a href="{{ post.url | relative_url }}"
+        style="position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        z-index: 1;
+        pointer-events: auto;"></a>
       <!-- Light image overlay -->
       {% if post.image %}
       <div class="card-img-top bg-white bg-opacity-10" 
