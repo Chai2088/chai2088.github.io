@@ -2,43 +2,917 @@
 layout: About Me
 ---
 
-## About Me
-Hi! I’m Jiayi — but you can call me __Chai__.\
-I’m a Computer Science graduate from __DigiPen Institute of Technology__, where I specialized in __Real-Time Interactive Simulation__. Over the past four years, I’ve collaborated on multiple team-based game projects created from custom game engines builded from scratch by ourselves.
+<div class="about-page">
 
-Along the way, I’ve also created several solo projects for class assignments — some of which I’m particularly proud of and have shared on my website.
+ <section class="about-card profile-intro">
+  <!-- Profile Header with Animation -->
+  <div class="profile-header" data-aos="fade-down" data-aos-duration="800">
+    <img src="/assets/img/favicons/android-chrome-192x192.png" alt="Jiayi (Chai)" class="profile-avatar">
+    <div>
+      <h1>Hi! I'm Jiayi <span class="nickname">"Chai"</span></h1>
+      <p class="tagline">Game Engine & Graphics Programmer</p>
+    </div>
+  </div>
 
-I’m most passionate about working on the engine side of development, especially building __tools and graphic engines__. That said, I’m always open to diving into gameplay programming and exploring other areas of game development and sofware development.
+  <div class="profile-content">
+    <!-- Intro Paragraph with Typing Animation -->
+    <div class="intro-paragraph" data-aos="fade-up" data-aos-delay="200">
+      <p>I'm a <strong>Computer Science graduate</strong> from <strong>DigiPen Institute of Technology</strong>, where I specialized in <strong class="highlight">Real-Time Interactive Simulation</strong>. Over four intensive years, I collaborated on multiple team projects developing <strong>custom game engines from scratch</strong>, gaining deep understanding of engine architecture and performance optimization.</p>
+    </div>
+    
+    <!-- Project Showcase with Card Animations -->
+    <div class="project-showcase">
+      <div class="project-type" data-aos="flip-left" data-aos-delay="300">
+        <i class="fas fa-users"></i>
+        <h3>Projects</h3>
+        <p>Built complete game engines with classmates, tackling challenges like rendering pipelines, physics systems, and memory management. <a href="/portfolio"> Check them here</a></p>
+      </div>
+    </div>
 
-## Programing Languages
+    <!-- Passion Statement with Grow Animation -->
+    <div class="passion-statement" data-aos="zoom-in" data-aos-delay="500">
+      <div class="passion-icon">
+        <i class="fas fa-cogs"></i>
+      </div>
+      <div>
+        <h3>My Passion</h3>
+        <p>I thrive when <strong>building tools and graphics engines</strong>—nothing excites me more than optimizing rendering pipelines or creating developer tools. That said, I enjoy exploring all aspects of game development, from gameplay programming to shader development.</p>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- Programming Languages Section with Animations -->
+<section class="skills-section" data-aos="fade-up">
+  <h2 class="section-title" data-aos="fade-right" data-aos-delay="100"><i class="fas fa-code"></i> Programming Languages</h2>
+  
+  <div class="skills-grid">
+    <!-- C++ -->
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+      <div class="skill-header">
+        <div class="skill-icon">
+          <i class="fab fa-cuttlefish"></i><sup>++</sup>
+        </div>
+        <h3 class="skill-name">C++</h3>
+        <span class="skill-level">Proficient</span>
+      </div>
+      <div class="skill-bar-container">
+        <div class="skill-bar" style="width: 90%"></div>
+      </div>
+    </div>
+    
+    <!-- C -->
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+      <div class="skill-header">
+        <div class="skill-icon">
+          <i class="fas fa-c"></i>
+        </div>
+        <h3 class="skill-name">C</h3>
+        <span class="skill-level">Proficient</span>
+      </div>
+      <div class="skill-bar-container">
+        <div class="skill-bar" style="width: 85%"></div>
+      </div>
+    </div>
+    
+    <!-- C# -->
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+      <div class="skill-header">
+        <div class="skill-icon">
+          <i class="fab fa-hashtag"></i><sup>#</sup>
+        </div>
+        <h3 class="skill-name">C#</h3>
+        <span class="skill-level">Proficient</span>
+      </div>
+      <div class="skill-bar-container">
+        <div class="skill-bar" style="width: 80%"></div>
+      </div>
+    </div>
+    
+    <!-- Python -->
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+      <div class="skill-header">
+        <div class="skill-icon">
+          <i class="fab fa-python"></i>
+        </div>
+        <h3 class="skill-name">Python</h3>
+        <span class="skill-level">Familiar</span>
+      </div>
+      <div class="skill-bar-container">
+        <div class="skill-bar" style="width: 65%"></div>
+      </div>
+    </div>
+    
+    <!-- GLSL -->
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+      <div class="skill-header">
+        <div class="skill-icon">
+          <i class="fas fa-shapes"></i>
+        </div>
+        <h3 class="skill-name">GLSL</h3>
+        <span class="skill-level">Proficient</span>
+      </div>
+      <div class="skill-bar-container">
+        <div class="skill-bar" style="width: 75%"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-* C++
-* C
-* C#
-* Python
-* GLSL
+<!-- Tools Section with Animation -->
+<section class="skills-section" data-aos="fade-up" data-aos-delay="100">
+  <h2 class="section-title" data-aos="fade-right" data-aos-delay="150"><i class="fas fa-tools"></i> Development Tools</h2>
+  
+  <div class="skills-grid">
+    <!-- Visual Studio -->
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+      <div class="skill-icon">
+        <i class="fas fa-code"></i>
+      </div>
+      <h3 class="skill-name">Visual Studio</h3>
+      <div class="skill-description">
+        <p>My primary IDE for software development. Highly proficient with advanced features like performance profiling.</p>
+      </div>
+    </div>
+    
+    <!-- RenderDoc -->
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+      <div class="skill-icon">
+        <i class="fas fa-bug"></i>
+      </div>
+      <h3 class="skill-name">RenderDoc</h3>
+      <div class="skill-description">
+        <p>Essential tool for diagnosing and resolving rendering bugs during graphics development.</p>
+      </div>
+    </div>
+    
+    <!-- CMake -->
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+      <div class="skill-icon">
+        <i class="fas fa-cubes"></i>
+      </div>
+      <h3 class="skill-name">CMake</h3>
+      <div class="skill-description">
+        <p>Enables creation of cross-platform projects, streamlining the build process.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-## Tools
+<!-- Programs Section with Animation -->
+<section class="skills-section" data-aos="fade-up" data-aos-delay="100">
+  <h2 class="section-title" data-aos="fade-right" data-aos-delay="150"><i class="fas fa-laptop-code"></i> Programs & Engines</h2>
+  
+  <div class="skills-grid">
+    <!-- Unreal Engine -->
+    <div class="skill-card" data-aos="flip-up" data-aos-delay="200">
+      <div class="skill-icon">
+        <i class="fas fa-gamepad"></i>
+      </div>
+      <h3 class="skill-name">Unreal Engine</h3>
+      <div class="skill-description">
+        <p>Developed full game projects using both C++ and Blueprints.</p>
+      </div>
+    </div>
+    
+    <!-- Unity -->
+    <div class="skill-card" data-aos="flip-up" data-aos-delay="250">
+      <div class="skill-icon">
+        <i class="fab fa-unity"></i>
+      </div>
+      <h3 class="skill-name">Unity</h3>
+      <div class="skill-description">
+        <p>Created several games including a 48-hour platformer during a Game Jam.</p>
+      </div>
+    </div>
+    
+    <!-- Maya -->
+    <div class="skill-card" data-aos="flip-up" data-aos-delay="300">
+      <div class="skill-icon">
+        <i class="fas fa-cube"></i>
+      </div>
+      <h3 class="skill-name">Maya</h3>
+      <div class="skill-description">
+        <p>Gained solid 3D modeling foundation with complementary Blender experience.</p>
+      </div>
+    </div>
+    
+    <!-- ImGui -->
+    <div class="skill-card" data-aos="flip-up" data-aos-delay="350">
+      <div class="skill-icon">
+        <i class="fas fa-window-maximize"></i>
+      </div>
+      <h3 class="skill-name">ImGui</h3>
+      <div class="skill-description">
+        <p>Built custom tools and debug interfaces for game engines.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-### Visual Studio
-> Visual Studio is my primary IDE for software development. I'm highly proficient with it and frequently use advanced features such as the performance profiler to optimize my code.
+<!-- Education Section with Animations -->
+<section class="education-section" data-aos="fade-up">
+  <h2 class="section-title" data-aos="fade-right" data-aos-delay="100"><i class="fas fa-graduation-cap"></i> Education</h2>
+  
+  <div class="education-timeline">
+    <!-- DigiPen -->
+    <div class="education-item" data-aos="fade-left" data-aos-delay="200">
+      <div class="education-major">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p class="education-specialization">Real-Time Interactive Simulation</p>
+      </div>
+      
+      <div class="education-meta">
+        <div class="meta-line" data-aos="fade" data-aos-delay="300">
+          <span class="education-place">
+            <i class="fas fa-map-marker-alt"></i> DigiPen Institute of Technology Europe-Bilbao
+          </span>
+        </div>
+        <div class="meta-line" data-aos="fade" data-aos-delay="350">
+          <span class="education-date">
+            <i class="far fa-calendar-alt"></i> 2021 - 2025
+          </span>
+        </div>
+      </div>
+      
+      <div class="education-highlights" data-aos="fade-up" data-aos-delay="400">
+        <h4>Key Achievements:</h4>
+        <ul>
+          <li data-aos="fade-up" data-aos-delay="450">Developed multiple game engines from scratch in C++</li>
+          <li data-aos="fade-up" data-aos-delay="500">Specialized in graphics programming and low-level systems</li>
+          <li data-aos="fade-up" data-aos-delay="550">Completed team-based game projects throughout curriculum</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-### RenderDoc
-> Debugging graphics issues can be complex, which is why I rely heavily on RenderDoc. It has become an essential tool for diagnosing and resolving rendering bugs during graphics development.
+<!--CV section -->
+<section class="cv-section" data-aos="fade-up">
+  <h2 data-aos="fade-right"><i class="fas fa-file-alt"></i> Curriculum Vitae</h2>
+  
+  <div class="cv-options">
+    <!-- Animated Download Button -->
+    <a href="/assets/img/JiayiLin_CV_GraphicsProgrammer.png" class="cv-button" download data-aos="zoom-in" data-aos-delay="100">
+      <i class="fas fa-file-png"></i> Download PNG
+      <span class="download-arrow"><i class="fas fa-arrow-down"></i></span>
+    </a>
+    
+    <!-- Preview with Pulse Animation -->
+    <div class="cv-preview" data-aos="flip-up" data-aos-delay="200">
+      <img src="/assets/img/JiayiLin_CV_GraphicsProgrammer.png" alt="CV Preview" class="cv-image" id="cvPreview">
+      <p class="preview-caption">Click to view fullscreen</p>
+      <div class="pulse-effect"></div>
+    </div>
+  </div>
+</section>
 
-### CMake
-> I use CMake regularly due to its flexibility and power. It allows me to create cross-platform projects with ease, streamlining the build process across different environments.
+<!-- Modal Overlay -->
+<div id="cvModal" class="modal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="modalCvImage">
+  <div class="modal-caption">Press ESC or click outside to close</div>
+</div>
 
-## Programs
+</div>
 
-### Unreal Engine
-> I worked extensively with Unreal Engine during my senior year, developing a full game project. I programmed in both C++ and Unreal Blueprints, often combining the two to take full advantage of the engine’s flexibility.
+<!-- Add this in your head tag -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-### Unity
-> Unity was the first game engine I learned. Since then, I’ve developed several games using it, including a platformer created in just 48 hours during a 2024 Game Jam with a teammate.
+<!-- Add this before closing body tag -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+// Initialize AOS with custom settings
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    duration: 600,
+    easing: 'ease-out-quad',
+    once: true,
+    offset: 120,
+    delay: 100
+  });
+});
+</script>
 
-### Maya
-> At university, I was introduced to 3D modeling using Maya. It gave me a solid foundation in modeling techniques. I also have prior experience with __Blender__, a similar tool, which helped me expand my modeling skillset.
 
-## CV
-![CV](/assets/img/JiayiLin_CV_GraphicsProgrammer.png)
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize AOS animations
+  AOS.init({
+    duration: 800,
+    easing: 'ease-out-quad',
+    once: true
+  });
+
+  // CV Preview Modal
+  const modal = document.getElementById("cvModal");
+  const previewImg = document.getElementById("cvPreview");
+  const modalImg = document.getElementById("modalCvImage");
+  
+  // Set modal image source
+  modalImg.src = previewImg.src;
+  
+  // Open modal with animation
+  previewImg.addEventListener('click', function() {
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  });
+  
+  // Close modal functions
+  function closeModal() {
+    modal.classList.remove('show');
+    document.body.style.overflow = 'auto';
+  }
+  
+  // Close when X is clicked
+  document.querySelector('.close-modal').addEventListener('click', closeModal);
+  
+  // Close when clicking outside image
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+  
+  // Close with ESC key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+      closeModal();
+    }
+  });
+  
+  // Add zoom effect on mousewheel
+  let scale = 1;
+  modalImg.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    scale += e.deltaY * -0.01;
+    scale = Math.min(Math.max(0.5, scale), 3);
+    modalImg.style.transform = `scale(${scale})`;
+  });
+});
+</script>
+
+
+<style>
+/* Base Styles */
+.about-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.about-card h2 {
+  margin-top: 0;
+  color: var(--heading-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-card h2 i {
+  color: var(--link-color);
+}
+
+/* Animation Styles */
+[data-aos] {
+  transition-property: transform, opacity;
+}
+
+/* Profile Animation */
+.profile-header {
+  transition: all 0.8s ease;
+}
+
+/* Project Card Animation */
+.project-type {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Passion Statement Animation */
+.passion-statement {
+  transition: all 0.6s ease-out;
+}
+
+/* Existing styles from previous implementation remain the same */
+.profile-intro {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Profile Section */
+.profile-card {
+  text-align: center;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--border-color);
+  margin-bottom: 1rem;
+}
+
+.name-highlight {
+  color: var(--link-color);
+}
+
+.profile-tagline {
+  font-size: 1.2rem;
+  color: var(--text-muted-color);
+  margin: 0.5rem 0;
+}
+
+.profile-content {
+  text-align: left;
+  line-height: 1.7;
+}
+
+/* Animation Enhancements */
+.skill-card {
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-origin: center bottom;
+}
+/* Skills Section */
+/* Skills Section Styling */
+.skills-section {
+  margin: 2.5rem 0;
+}
+
+.section-title {
+  color: var(--heading-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* Skill Bars Styling */
+.skill-bar-container {
+  height: 6px;
+  background: var(--border-color);
+  border-radius: 3px;
+  margin: 0.8rem 0;
+  overflow: hidden;
+}
+
+.skill-bar {
+  height: 100%;
+  background: var(--link-color);
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-icon {
+  font-size: 1.4rem;
+  color: var(--link-color);
+  position: relative;
+}
+
+.skill-icon sup {
+  font-size: 0.6rem;
+  position: absolute;
+  top: -0.4rem;
+  right: -0.6rem;
+}
+
+.skill-name {
+  margin: 0;
+  font-size: 1.1rem;
+  flex-grow: 1;
+}
+
+.skill-level {
+  font-size: 0.8rem;
+  color: var(--text-muted-color);
+  background: var(--body-bg);
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+
+/* Animation for skill bars */
+.skills-section:hover .skill-bar {
+  animation: skillBarAnimation 1s ease-out;
+}
+
+@keyframes skillBarAnimation {
+  0% { width: 0%; }
+  100% { width: attr(style width); }
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.skill-card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skill-icon {
+  font-size: 1.8rem;
+  color: var(--link-color);
+  margin-bottom: 1rem;
+}
+
+.skill-name {
+  margin: 0 0 0.75rem 0;
+  color: var(--heading-color);
+  font-size: 1.2rem;
+}
+
+.skill-description p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Tools & Programs Sections */
+.tools-grid, .programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tool-category, .program-category {
+  background: var(--body-bg);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.tool-category h3, .program-category h3 {
+  margin-top: 0;
+  color: var(--heading-color);
+  font-size: 1.1rem;
+}
+
+.tool-category ul, .program-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tool-category li, .program-category li {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tool-category i, .program-category i {
+  color: var(--link-color);
+  width: 20px;
+  text-align: center;
+}
+
+/* Education Section Styling */
+.education-item {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.education-major {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.education-major h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: var(--heading-color);
+}
+
+.education-specialization {
+  margin: 0.5rem 0 0;
+  color: var(--link-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.education-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-muted-color);
+}
+
+.meta-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.education-meta i {
+  width: 18px;
+  text-align: center;
+  color: var(--link-color);
+}
+
+.education-highlights {
+  text-align: left;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.education-highlights h4 {
+  margin: 0 0 0.8rem;
+  color: var(--heading-color);
+  font-size: 1.1rem;
+}
+
+.education-highlights ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.education-highlights li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .education-major h3 {
+    font-size: 1.2rem;
+  }
+  
+  .education-specialization {
+    font-size: 1rem;
+  }
+}
+
+/* CV Section Animation Styles */
+.cv-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+  position: relative;
+}
+
+.cv-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(var(--link-color-rgb), 0.03) 0%, transparent 100%);
+  z-index: -1;
+}
+
+.cv-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+/* Animated Download Button */
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.9rem 1.8rem;
+  background: var(--link-color);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.cv-button:hover {
+  background: var(--link-hover-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(var(--link-color-rgb), 0.3);
+}
+
+.cv-button:hover .download-arrow {
+  transform: translateY(5px);
+  opacity: 1;
+}
+
+.download-arrow {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Animated Preview */
+.cv-preview {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  position: relative;
+  perspective: 1000px;
+}
+
+.cv-image {
+  max-width: 100%;
+  max-height: 300px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  cursor: zoom-in;
+  transform-style: preserve-3d;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cv-image:hover {
+  transform: translateY(-5px) rotateX(5deg);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.preview-caption {
+  margin-top: 0.8rem;
+  color: var(--text-muted-color);
+  font-size: 0.9rem;
+  animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.pulse-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: rgba(var(--link-color-rgb), 0.1);
+  animation: pulse 3s infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0; }
+  50% { transform: scale(1.01); opacity: 0.3; }
+  100% { transform: scale(0.95); opacity: 0; }
+}
+
+/* Enhanced Modal Animation */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.95);
+  overflow: auto;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.modal.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  transform: scale(0.9);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  cursor: grab;
+}
+
+.modal.show .modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.close-modal {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(0.8);
+  opacity: 0.7;
+}
+
+.modal.show .close-modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.close-modal:hover {
+  color: var(--link-color);
+  transform: rotate(90deg) scale(1.1);
+}
+
+.modal-caption {
+  color: white;
+  text-align: center;
+  margin: 15px 0;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease 0.2s;
+}
+
+.modal.show .modal-caption {
+  opacity: 0.7;
+  transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .cv-options {
+    flex-direction: column;
+  }
+  
+  .modal-content {
+    max-width: 95%;
+  }
+  
+  .close-modal {
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+  }
+  
+  .cv-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+</style>
