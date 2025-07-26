@@ -23,19 +23,47 @@ layout: default
  </section>
 </main>
 
-<!-- 5. AOS Initialization -->
 <script>
-  const aosScript = document.createElement('script');
-  aosScript.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
-  aosScript.onload = () => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      disable: window.innerWidth < 768
-    });
-  };
-  document.body.appendChild(aosScript);
+// Load AOS with proper error handling and timing
+document.addEventListener('DOMContentLoaded', function() {
+  // 1. Dynamically load AOS if not already present
+  if (!window.AOS) {
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+    script.integrity = 'sha384-...'; // Optional SRI hash
+    script.crossOrigin = 'anonymous';
+    script.onload = initAOS;
+    script.onerror = function() {
+      console.error('Failed to load AOS script');
+    };
+    document.head.appendChild(script);
+  } else {
+    initAOS();
+  }
 
-  window.addEventListener('load', AOS.refresh);
+  // 2. Initialize AOS
+  function initAOS() {
+    try {
+      AOS.init({
+        duration: 800,
+        once: true,
+        disable: window.innerWidth < 768,
+        easing: 'ease-out-quart'
+      });
+
+      // 3. Proper load event handler
+      if (document.readyState === 'complete') {
+        AOS.refresh();
+      } else {
+        window.addEventListener('load', function() {
+          AOS.refresh();
+          console.log('AOS refreshed after full page load');
+        });
+      }
+    } catch (e) {
+      console.error('AOS initialization failed:', e);
+    }
+  }
+});
 </script>
 
