@@ -9,71 +9,68 @@ layout: default
   }
 </style>
 
-<html>
-<head>
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
-  {% include AboutMeContent.html %}
-  <!-- AOS JS at end of body -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      AOS.init({
-        duration: 800,
-        once: true,
-        disable: window.innerWidth < 768 // disable on mobile if needed
-      });
+ <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+{% include AboutMeContent.html %}
+<!-- AOS JS at end of body -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      duration: 800,
+      once: true,
+      disable: window.innerWidth < 768 // disable on mobile if needed
     });
-      // CV Preview Modal
-      const modal = document.getElementById("cvModal");
-      const previewImg = document.getElementById("cvPreview");
-      const modalImg = document.getElementById("modalCvImage");
-      
-      // Set modal image source
-      modalImg.src = previewImg.src;
-      
-      // Open modal with animation
-      previewImg.addEventListener('click', function() {
-        modal.classList.add('show');
-        document.body.style.overflow = 'hidden';
-      });
-      
-      // Close modal functions
-      function closeModal() {
-        modal.classList.remove('show');
-        document.body.style.overflow = 'auto';
-      }
-      
-      // Close when X is clicked
-      document.querySelector('.close-modal').addEventListener('click', closeModal);
-      
-      // Close when clicking outside image
-      modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-          closeModal();
-        }
-      });
-      
-      // Close with ESC key
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && modal.classList.contains('show')) {
-          closeModal();
-        }
-      });
-      
-      // Add zoom effect on mousewheel
-      let scale = 1;
-      modalImg.addEventListener('wheel', function(e) {
-        e.preventDefault();
-        scale += e.deltaY * -0.01;
-        scale = Math.min(Math.max(0.5, scale), 3);
-        modalImg.style.transform = `scale(${scale})`;
-      });
+  });
+    // CV Preview Modal
+    const modal = document.getElementById("cvModal");
+    const previewImg = document.getElementById("cvPreview");
+    const modalImg = document.getElementById("modalCvImage");
     
-    // Refresh AOS on page load (helps with some GitHub Pages issues)
-    window.addEventListener('load', AOS.refresh);
-  </script>
-</body>
-</html>
+    // Set modal image source
+    modalImg.src = previewImg.src;
+    
+    // Open modal with animation
+    previewImg.addEventListener('click', function() {
+      modal.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    });
+    
+    // Close modal functions
+    function closeModal() {
+      modal.classList.remove('show');
+      document.body.style.overflow = 'auto';
+    }
+    
+    // Close when X is clicked
+    document.querySelector('.close-modal').addEventListener('click', closeModal);
+    
+    // Close when clicking outside image
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+    
+    // Close with ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal.classList.contains('show')) {
+        closeModal();
+      }
+    });
+    
+    // Add zoom effect on mousewheel
+    let scale = 1;
+    modalImg.addEventListener('wheel', function(e) {
+      e.preventDefault();
+      scale += e.deltaY * -0.01;
+      scale = Math.min(Math.max(0.5, scale), 3);
+      modalImg.style.transform = `scale(${scale})`;
+    });
+  
+  // Refresh AOS on page load (helps with some GitHub Pages issues)
+  window.addEventListener('load', AOS.refresh);
+</script>
+
