@@ -3,27 +3,43 @@ layout: default
 ---
 
 <style>
+  /* Only override what you need */
   .page {
-    max-width: none;
+    max-width: none; 
     padding: 0;
+  }
+  
+  /* Custom additions */
+  .hero-section {
+    background: var(--body-bg);
+    padding: 4rem 0;
   }
 </style>
 
- <!-- AOS CSS -->
+<!-- AOS CSS (loads in head via includes) -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-{% include AboutMeContent.html %}
+<!-- Your custom content wrapper -->
+<main class="custom-layout" aria-label="Custom Content">
+ <section class="hero-section" data-aos="fade-up">
+  {% include AboutMeContent.html %}
+ </section>
+</main>
 
-<!-- AOS JS at end of body -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- 5. AOS Initialization -->
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  // Load AOS from CDN
+  const aosScript = document.createElement('script');
+  aosScript.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+  aosScript.onload = () => {
     AOS.init({
       duration: 800,
       once: true,
-      disable: window.innerWidth < 768 // disable on mobile if needed
+      disable: window.innerWidth < 768
     });
-  });
+  };
+  document.body.appendChild(aosScript);
+  
   // Refresh AOS on page load (helps with some GitHub Pages issues)
   window.addEventListener('load', AOS.refresh);
 </script>
