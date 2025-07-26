@@ -25,11 +25,11 @@ layout: default
 
 <script>
 (function() {
-  // 1. Detect environment
+  
   const isLocal = window.location.hostname === 'localhost' || 
                  window.location.hostname === '127.0.0.1';
 
-  // 2. Unified AOS loader
+  
   function loadAOS() {
     return new Promise((resolve) => {
       if (window.AOS) {
@@ -39,8 +39,8 @@ layout: default
 
       const script = document.createElement('script');
       script.src = isLocal 
-        ? 'https://unpkg.com/aos@2.3.1/dist/aos.js' // Faster for local
-        : 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js'; // More reliable for production
+        ? 'https://unpkg.com/aos@2.3.1/dist/aos.js' 
+        : 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js'; 
       
       script.crossOrigin = 'anonymous';
       script.async = true;
@@ -61,7 +61,7 @@ layout: default
     });
   }
 
-  // 3. Environment-specific initialization
+ 
   function initAOS() {
     loadAOS().then(() => {
       try {
@@ -73,14 +73,14 @@ layout: default
           startEvent: isLocal ? 'DOMContentLoaded' : 'load'
         });
 
-        // 4. Smart refresh
+        
         const refresh = () => {
           setTimeout(() => {
             if (window.AOS) {
               AOS.refresh();
               console.log('AOS refreshed');
             }
-          }, isLocal ? 50 : 200); // Shorter delay locally
+          }, isLocal ? 50 : 200);
         };
 
         if (document.readyState === 'complete') {
@@ -97,7 +97,7 @@ layout: default
     });
   }
 
-  // 5. Start initialization
+  
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initAOS);
   } else {
