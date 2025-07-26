@@ -8,5 +8,35 @@
 {%- endif -%}
 ';
 
-/* append your custom style below */
+// 1. Import AOS CSS (SCSS compatible way)
 @import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
+
+// 2. AOS visibility control
+[data-aos] {
+  visibility: hidden;
+  transition-property: transform, opacity;
+  
+  // 3. Chirpy-specific adjustments
+  body[data-theme='dark'] & {
+    opacity: 0.98; // Slightly less than 1 for smoother dark mode transitions
+  }
+
+  &.aos-animate {
+    visibility: visible;
+    
+    // 4. Dark mode compatibility
+    body[data-theme='dark'] & {
+      opacity: 1;
+    }
+  }
+}
+
+// 5. Optional: Add Chirpy's breakpoint variables
+@media (max-width: 768px) {
+  [data-aos] {
+    &, &.aos-animate {
+      visibility: visible !important; // Disable animations on mobile
+      transform: none !important;
+    }
+  }
+}

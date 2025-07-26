@@ -24,48 +24,84 @@ layout: default
 </main>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
+  // 1. Detect environment
+  const isLocal = window.location.hostname === 'localhost' || 
+                 window.location.hostname === '127.0.0.1';
 
-  if (!window.AOS) {
-    const script = document.createElement('script');
-    script.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
-    script.integrity = 'sha384-...'; 
-    script.crossOrigin = 'anonymous';
-    script.onload = initAOS;
-    script.onerror = function() {
-      console.error('Failed to load AOS script');
-    };
-    document.head.appendChild(script);
+  // 2. Unified AOS loader
+  function loadAOS() {
+    return new Promise((resolve) => {
+      if (window.AOS) {
+        console.log('AOS already loaded');
+        return resolve();
+      }
+
+      const script = document.createElement('script');
+      script.src = isLocal 
+        ? 'https://unpkg.com/aos@2.3.1/dist/aos.js' // Faster for local
+        : 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js'; // More reliable for production
+      
+      script.crossOrigin = 'anonymous';
+      script.async = true;
+
+      script.onload = () => {
+        console.log('AOS loaded from:', isLocal ? 'unpkg' : 'jsDelivr');
+        resolve();
+      };
+
+      script.onerror = () => {
+        console.warn('CDN failed, trying local fallback');
+        const fallback = document.createElement('script');
+        fallback.src = '/assets/js/aos.js';
+        document.head.appendChild(fallback).onload = resolve;
+      };
+
+      document.head.appendChild(script);
+    });
+  }
+
+  // 3. Environment-specific initialization
+  function initAOS() {
+    loadAOS().then(() => {
+      try {
+        AOS.init({
+          duration: 800,
+          once: true,
+          disable: window.innerWidth < 768,
+          easing: 'ease-out-quart',
+          startEvent: isLocal ? 'DOMContentLoaded' : 'load'
+        });
+
+        // 4. Smart refresh
+        const refresh = () => {
+          setTimeout(() => {
+            if (window.AOS) {
+              AOS.refresh();
+              console.log('AOS refreshed');
+            }
+          }, isLocal ? 50 : 200); // Shorter delay locally
+        };
+
+        if (document.readyState === 'complete') {
+          refresh();
+        } else {
+          window.addEventListener('load', refresh);
+          if (isLocal) {
+            document.addEventListener('DOMContentLoaded', refresh);
+          }
+        }
+      } catch (e) {
+        console.error('AOS init failed:', e);
+      }
+    });
+  }
+
+  // 5. Start initialization
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAOS);
   } else {
     initAOS();
   }
-
-  function initAOS() {
-    try {
-      AOS.init({
-        duration: 800,
-        once: true,
-        disable: window.innerWidth < 768,
-        easing: 'ease-out-quart'
-      });
-
-      if (document.readyState === 'complete') {
-        AOS.refresh();
-      } else {
-        window.addEventListener('load', function() {
-          AOS.refresh();
-          console.log('AOS refreshed after full page load');
-        });
-      }
-    } catch (e) {
-      console.error('AOS initialization failed:', e);
-    }
-  }
-  
-  window.addEventListener('load', function() {
-    AOS.refresh();
-    console.log('AOS refreshed after full page load');
-  });
-});
+})();
 </script>
-
