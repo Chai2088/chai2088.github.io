@@ -24,13 +24,12 @@ layout: default
 </main>
 
 <script>
-// Load AOS with proper error handling and timing
 document.addEventListener('DOMContentLoaded', function() {
-  // 1. Dynamically load AOS if not already present
+
   if (!window.AOS) {
     const script = document.createElement('script');
     script.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
-    script.integrity = 'sha384-...'; // Optional SRI hash
+    script.integrity = 'sha384-...'; 
     script.crossOrigin = 'anonymous';
     script.onload = initAOS;
     script.onerror = function() {
@@ -41,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initAOS();
   }
 
-  // 2. Initialize AOS
   function initAOS() {
     try {
       AOS.init({
@@ -51,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         easing: 'ease-out-quart'
       });
 
-      // 3. Proper load event handler
       if (document.readyState === 'complete') {
         AOS.refresh();
       } else {
