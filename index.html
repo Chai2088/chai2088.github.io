@@ -61,6 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error('AOS initialization failed:', e);
     }
   }
+  
+  window.addEventListener('load', function() {
+    AOS.refresh();
+    console.log('AOS refreshed after full page load');
+  });
 });
 </script>
 
