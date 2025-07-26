@@ -16,9 +16,6 @@ layout: default
   }
 </style>
 
-<!-- AOS CSS (loads in head via includes) -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 <!-- Your custom content wrapper -->
 <main class="custom-layout" aria-label="Custom Content">
  <section class="hero-section" data-aos="fade-up">
@@ -28,7 +25,6 @@ layout: default
 
 <!-- 5. AOS Initialization -->
 <script>
-  // Load AOS from CDN
   const aosScript = document.createElement('script');
   aosScript.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
   aosScript.onload = () => {
@@ -39,8 +35,7 @@ layout: default
     });
   };
   document.body.appendChild(aosScript);
-  
-  // Refresh AOS on page load (helps with some GitHub Pages issues)
+
   window.addEventListener('load', AOS.refresh);
 </script>
 
