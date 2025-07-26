@@ -6,7 +6,7 @@ layout: About Me
 
  <section class="about-card profile-intro">
   <!-- Profile Header with Animation -->
-  <div class="profile-header" >
+  <div class="profile-header" data-aos="fade-down" data-aos-duration="800">
     <img src="/assets/img/favicons/android-chrome-192x192.png" alt="Jiayi (Chai)" class="profile-avatar">
     <div>
       <h1>Hi! I'm Jiayi <span class="nickname">"Chai"</span></h1>
